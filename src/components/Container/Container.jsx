@@ -27,7 +27,7 @@ const Container = ({ title }) => {
 
 
     const getURL = () => {
-        let url = 'http://localhost:5000/products/search?';
+        let url = 'https://api-production-b0a5.up.railway.app/products/search?';
         if(currentFilters) {
             const { brand, color, price } = currentFilters;
             url += `brand=${brand || ''}&color=${color || ''}&price=${price || ''}`;
